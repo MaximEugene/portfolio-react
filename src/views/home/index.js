@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import MenuIcon from "../../components/menuIcon/inedex";
 import { CSSTransition } from "react-transition-group";
+import Loader from "../../components/loader";
 
 import "./home.css";
 import clsx from "clsx";
@@ -16,8 +17,14 @@ const Home = () => {
   const ref32 = useRef(null);
   const [currentState, setCurrentState] = useState(11);
   const [currentTransitionState, setCurrentTransitionState] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoading = () => {
+    setIsLoading(false);
+  };
   window.onload = function () {
     currentState === 11 && ref11.current && ref11.current.play();
+    handleLoading();
   };
   console.log(onPlay.current, "onplaycurre");
   const handlePrev = () => {
@@ -70,6 +77,7 @@ const Home = () => {
   }, [currentState]);
   return (
     <div className="home">
+      {isLoading && <Loader />}
       <div className="home__background">
         <video
           ref={ref11}
