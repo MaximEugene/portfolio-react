@@ -1,0 +1,114 @@
+.menuicon_btn {
+  color: #3a3b3b;
+  z-index: 101;
+  background: transparent;
+  overflow: visible;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+}
+
+.menuicon__span {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menuicon__span1-1 {
+  top: calc(50% - 6px);
+  width: 15px;
+  display: block;
+  position: absolute;
+  right: calc(50% - 15px);
+  height: 1px;
+  background-color: white;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transform-origin: 225% 0%;
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 0.4s;
+}
+.menuicon__span:hover .menuicon__span1-1 {
+  transform: rotateY(90deg);
+  transform-origin: 225% 0%;
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 0.1s;
+}
+.menuicon__span1-2 {
+  top: calc(50% - 6px);
+  width: 30px;
+  display: block;
+  position: absolute;
+  right: calc(50% - 15px);
+  height: 1px;
+  background-color: white;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(-90deg);
+  transform-origin: -125% 0%;
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 0.2s;
+}
+.menuicon__span:hover .menuicon__span1-2 {
+  transform: rotateY(0deg);
+  transform-origin: -125% 0%;
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+.menuicon__span2-1 {
+  bottom: calc(50% - 6px);
+  width: 30px;
+  display: block;
+  position: absolute;
+  right: calc(50% - 15px);
+  height: 1px;
+  background-color: white;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transform-origin: 160% 0%;
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+.menuicon__span:hover .menuicon__span2-1 {
+  transform: rotateY(90deg);
+  transform-origin: 160% 0%;
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.menuicon__span2-2 {
+  bottom: calc(50% - 6px);
+  width: 15px;
+  display: block;
+  position: absolute;
+  right: calc(50% - 15px);
+  height: 1px;
+  background-color: white;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(-90deg);
+  transform-origin: -275% 0%;
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 0.1s;
+}
+.menuicon__span:hover .menuicon__span2-2 {
+  transform: rotateY(0deg);
+  transform-origin: -275% 0%;
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 0.4s;
+}

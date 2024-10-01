@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+@charset "UTF-8";
+a,
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+button,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*,
+:after,
+:before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
 }
-
-.App-link {
-  color: #61dafb;
+li {
+  list-style-type: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: suisseintl;
+  src: local("suisseintl"),
+    url(./assets/fonts/suisseintl-regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: suisseintl;
+  src: local("suisseintl"),
+    url(./assets/fonts/suisseintl-light.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: suisseintl;
+  src: local("suisseintl"),
+    url(./assets/fonts/suisseintl-medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: suisseintl;
+  src: local("suisseintl"),
+    url.(/assets/fonts/suisseintl-thin.woff2) format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: suisseintl, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 2em;
+  color: #3a3b3b;
+}
+body.js-scroll-container {
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+}
+body.page-id-about,
+body.page-id-contact,
+body.page-id-home,
+body.page-id-service {
+  color: #7c7c7d;
+  background-color: #1a1b1c;
+}
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+}
+.js.no-focus button:focus {
+  outline: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.js.no-focus a:focus {
+  outline: none;
+}
+input,
+textarea {
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+}
+address {
+  font-style: inherit;
+}
+th {
+  font-weight: inherit;
 }
