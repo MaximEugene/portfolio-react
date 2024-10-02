@@ -6,7 +6,16 @@
   background-color: #151617;
   color: #7c7c7d;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
+  font-size: 2em;
+}
+.loader-name {
+  color: white;
+  font-size: 3rem;
+}
+.loader-loading {
+  margin-top: 10rem;
 }
